@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #20c997;
+  --primary-shade: #168d6a;
+  --tag-color: #1098ad;
+  --cancel-color: #ff6b6b;
+}
+.grid {
+  display: grid;
+  gap: 4.8rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.heading-primary {
+  font-size: 6.2rem;
+  margin-bottom: 1.6rem;
+}
+.heading-secondary {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+}
+.subheading {
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+.tag {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: var(--tag-color);
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+}
+.center-text {
+  text-align: center;
+}
+.margin-right-sm {
+  margin-left: 0.8rem;
+}
+.margin-top-md {
+  margin-top: 4.8rem;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+  transition: all 0.4s;
+}
+.link:hover,
+.link.active {
+  border-bottom: 1px solid transparent;
+  color: var(--primary-color);
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.btn--fill:link,
+.btn--fill:visited {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.btn--fill:hover,
+.btn--fill:active {
+  background-color: var(--primary-shade);
+}
+.btn--cancel:link,
+.btn--cancel:visited {
+  color: #fff;
+  background-color: #555;
+}
+.btn--cancel:hover,
+.btn--cancel:active {
+  background-color: #444;
+}
+.btn--send:link,
+.btn--send:visited {
+  color: #fff;
+  background-color: var(--primary-shade);
+}
+.btn--send:hover,
+.btn:active {
+  background-color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
